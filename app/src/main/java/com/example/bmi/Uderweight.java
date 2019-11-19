@@ -3,6 +3,9 @@ package com.example.bmi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.TextView;
+
+import com.example.bmi.model.Body;
 
 public class Uderweight extends AppCompatActivity {
 
@@ -12,3 +15,5 @@ public class Uderweight extends AppCompatActivity {
         setContentView(R.layout.activity_uderweight);
     }
 }
+
+

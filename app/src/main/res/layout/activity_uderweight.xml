@@ -4,4 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Uderweight"/>
+    tools:context=".Uderweight">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/uderweight" />
+
+    <TextView
+        android:id="@+id/bmi_uderweight"
+        android:layout_width="171dp"
+        android:layout_height="81dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="142dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
