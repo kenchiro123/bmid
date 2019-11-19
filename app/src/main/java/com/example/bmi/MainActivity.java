@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -47,6 +48,22 @@ public class MainActivity extends AppCompatActivity {
                 dialog.setTitle("Result");
                 dialog.setMessage(msg);
                 // 47-47 ทำการ set dialog
+                if (bmi < 18.5) {
+                    Intent i1 = new Intent(MainActivity.this,Uderweight.class);
+                    startActivity(i1);
+                }
+                else if(bmi <25) {
+                    Intent i2 = new Intent(MainActivity.this,Normal.class);
+                    startActivity(i2);
+                }
+                else if(bmi <30) {
+                    Intent i3 = new Intent(MainActivity.this,fat.class);
+                    startActivity(i3);
+                }
+                else {
+                    Intent i4 = new Intent(MainActivity.this,morefat.class);
+                    startActivity(i4);
+                }
 
                 dialog.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
